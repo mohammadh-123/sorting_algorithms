@@ -1,5 +1,5 @@
-from mergesort import merge
-from insertionsort import insertion_sort
+from .mergesort import merge
+from .insertionsort import insertion_sort
 
 def calc_min_run(n):
     min_run = 32

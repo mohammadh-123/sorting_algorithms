@@ -1,0 +1,30 @@
+
+Algorithm 1 took 0.00703360000034081168 seconds for test 1.
+Algorithm 2 took 0.09679150000010849908 seconds for test 1.
+Algorithm 3 took 0.00408559999959834386 seconds for test 1.
+Algorithm 5 took 55.16498760000013135141 seconds for test 1.
+Algorithm 6 took 0.05839179999975385726 seconds for test 1.
+Algorithm 7 took 0.00560619999941991409 seconds for test 1.
+Algorithm 1 took 102.88270920000059049926 seconds for test 2.
+Algorithm 2 took 0.09840909999957148102 seconds for test 2.
+Algorithm 3 took 189.52078289999917615205 seconds for test 2.
+Algorithm 5 took 70.70982689999982540030 seconds for test 2.
+Algorithm 6 took 0.14830450000044947956 seconds for test 2.
+Algorithm 7 took 0.12907240000004094327 seconds for test 2.
+Algorithm 1 took 39.35573810000050798408 seconds for test 3.
+Algorithm 2 took 0.12767519999988508062 seconds for test 3.
+Algorithm 3 took 108.43329040000071472605 seconds for test 3.
+Algorithm 5 took 55.66807460000018181745 seconds for test 3.
+Algorithm 6 took 0.10320749999937106622 seconds for test 3.
+Algorithm 7 took 0.07923709999977290863 seconds for test 3.
+Algorithm 1 took 5.62373320000097010052 seconds for test 4.
+Algorithm 2 took 0.10271560000001045410 seconds for test 4.
+Algorithm 3 took 93.07089150000001609442 seconds for test 4.
+Algorithm 5 took 63.95350370000005568727 seconds for test 4.
+Algorithm 6 took 0.05817620000061651808 seconds for test 4.
+Algorithm 7 took 0.02121160000024246983 seconds for test 4.
+Algorithm 2 took 165.56004409999877680093 seconds for test 5.
+Algorithm 6 took 118.16052150000041365274 seconds for test 5.
+Algorithm 7 took 78.16745849999961137655 seconds for test 5.
+Algorithm 4 raised an error when executing all the tests because it exceeded the maximum depth.
+Algorithms 1,3,5 will take years to finish test 5.

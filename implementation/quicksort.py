@@ -17,9 +17,9 @@ def quicksort(arr,l,r):
     quicksort(arr,l,pivolt-1)
     quicksort(arr,pivolt+1,r)
     return arr
+if __name__ == '__main__':
+    arr = [1,2,2,1,5,3,12,3]
 
-arr = [1,2,2,1,5,3,12,3]
-
-print(quicksort(arr,0,len(arr)-1))
+    print(quicksort(arr,0,len(arr)-1))
     
     

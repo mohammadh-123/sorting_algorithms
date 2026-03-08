@@ -1,5 +1,5 @@
-from mergesort import merge
-from insertionsort import insertion_sort
+from .mergesort import merge
+from .insertionsort import insertion_sort
 
 
 def non_optimized_timsort(arr):

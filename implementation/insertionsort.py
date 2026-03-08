@@ -4,6 +4,7 @@ def insertion_sort(arr, l, r):
         j = i - 1
         element = arr[i]
         while j >= l and arr[j] > element:
+
             arr[j + 1] = arr[j]
             j -= 1
         arr[j + 1] = element
