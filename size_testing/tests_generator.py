@@ -7,7 +7,7 @@ def test_generator(file_name,num_of_arrays,min_size,max_size,min_value=-10000,ma
     file_path = f"size_testing/{file_name}.npy"
     if not os.path.exists(file_path):  
         arrays = []      
-        for i in range(num_of_arrays):
+        for _ in range(num_of_arrays):
             size = random.randint(min_size,max_size)
             array = np.random.randint(min_value,max_value,size)
             arrays.append(array)

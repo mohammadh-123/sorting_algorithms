@@ -1,4 +1,4 @@
-# test1.py is for small arrays
+
 import random
 import numpy as np
 import os
@@ -25,21 +25,18 @@ def test_generator(file_name,structure_type,min_value=-10000,max_value=10000):
                 sorted_half = np.sort(arr[:mid])
                 array = np.concatenate((sorted_half , arr[mid:])) 
                 arrays.append(array)
-                print(array)
             elif structure_type == 4:
                 partition = int(size * 0.95)
                 arr = np.random.randint(min_value,max_value,size)
                 sorted_part = np.sort(arr[:partition])
                 array = np.concatenate((sorted_part ,arr[partition:]))  
                 arrays.append(array)
-                print(array)
             elif structure_type == 5:
                 array = np.sort(np.random.randint(min_value,max_value,size))
                 array = array[::-1] 
                 arrays.append(array)
             
         arrays = np.asarray(arrays,dtype=list)
-        print(arrays)
         np.save(file_path,arrays,allow_pickle=True)
         
 # test 1 is for 7 sorted arrays with the biggest size is 50000   

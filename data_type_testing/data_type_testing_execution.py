@@ -17,24 +17,20 @@ mapping = {
 }
 n_logn_algorithms = set([2,4,6,7])
 num_of_algoritms = 7
-num_of_tests = 5
+num_of_tests = 4
 
 def saving_result(algorithm_number,duration,test_number):
-    with open('structure_testing_results.txt','a') as file:
+    with open('data_type_testing_results.txt','a') as file:
         data = f"Algorithm {algorithm_number} took {duration:.20f} seconds for test {test_number}.\n"
         print(data)
         file.write(data)
         
     
 
-for j in range(5,num_of_tests + 1):
-    file_path = f"structure_testing/test{j}.npy"
+for j in range(1,num_of_tests + 1):
+    file_path = f"data_type_testing/test{j}.npy"
     arrays = np.load(file_path,allow_pickle=True)
     for i in range(1,num_of_algoritms + 1):
-        if i ==4:
-            continue
-        if j > 4 and i not in n_logn_algorithms:
-            continue
         duration = 0
         algo = mapping[i]
         sig = inspect.signature(algo)
