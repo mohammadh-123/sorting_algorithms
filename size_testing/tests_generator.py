@@ -26,5 +26,6 @@ test_generator('test1',100000,2,150)
 test_generator('test2',100,10000,30000)
 test_generator('test3',10,1000000,10000000)
 test_generator('test4',1,100000000,100000000)
+test_generator('test0',100000,32,32)
 
 
