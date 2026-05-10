@@ -18,7 +18,7 @@ mapping = {
 n_logn_algorithms = set([2,4,6,7])
 num_of_algoritms = 7
 num_of_tests = 5
-
+sys.setrecursionlimit(30000)
 def saving_result(algorithm_number,duration,test_number):
     with open('structure_testing_results.txt','a') as file:
         data = f"Algorithm {algorithm_number} took {duration:.20f} seconds for test {test_number}.\n"
@@ -27,12 +27,11 @@ def saving_result(algorithm_number,duration,test_number):
         
     
 
-for j in range(5,num_of_tests + 1):
+for j in range(1,num_of_tests + 1):
+    
     file_path = f"structure_testing/test{j}.npy"
     arrays = np.load(file_path,allow_pickle=True)
     for i in range(1,num_of_algoritms + 1):
-        if i ==4:
-            continue
         if j > 4 and i not in n_logn_algorithms:
             continue
         duration = 0

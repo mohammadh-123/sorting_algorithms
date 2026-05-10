@@ -5,7 +5,7 @@ import numpy as np
 import os
 import inspect
 import sys
-
+sys.setrecursionlimit(30000)
 mapping = {
     1 : insertion_sort,
     2 : merge_sort,
@@ -17,7 +17,7 @@ mapping = {
 }
 n_logn_algorithms = set([2,4,6,7])
 num_of_algoritms = 7
-num_of_tests = 5
+num_of_tests = 4
 
 def saving_result(algorithm_number,duration,test_number):
     with open('size_testing_results.txt','a') as file:
@@ -27,7 +27,7 @@ def saving_result(algorithm_number,duration,test_number):
         
     
 
-for j in range(0,num_of_tests):
+for j in range(1,num_of_tests+1):
     file_path = f"size_testing/test{j}.npy"
     arrays = np.load(file_path,allow_pickle=True)
     if j ==4:

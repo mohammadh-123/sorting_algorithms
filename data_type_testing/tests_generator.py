@@ -9,7 +9,7 @@ def get_random_word(length = 5):
     word = [random.choice(chars) for _ in range(length) ]
     return ''.join(word)
 
-def test_generator(file_name,structure_type,min_value=-10000,max_value=10000,string_length=5):
+def test_generator(file_name,structure_type,min_value=-10000,max_value=10000,string_length=1000):
     sizes = [20,100,1000,5000,10000,20000,30000]
     file_path = f"data_type_testing/{file_name}.npy"
     if not os.path.exists(file_path):
@@ -29,12 +29,12 @@ def test_generator(file_name,structure_type,min_value=-10000,max_value=10000,str
         print(arrays)
         np.save(file_path,arrays,allow_pickle=True)
         
-# test 1 is for 7 integer arrays with the biggest size is 30000   
-# test 2 is for 7 big integer arrays with the biggest size is 30000
-# test 3 is for 7 float arrays with the biggest size is 30000
-# test 4 is for 7 string arrays with the biggest size is 30000
+# test 1 is for 7 integer arrays with ranges between -1000 1000
+# test 2 is for 7 big integer arrays with ranges between -1000000 1000000
+# test 3 is for 7 float arrays 
+# test 4 is for 7 string arrays with string sizes equal 1000
 
 test_generator('test1',1,-1000,1000)
 test_generator('test2',1,-1000000,1000000)
 test_generator('test3',2)
-test_generator('test4',3,string_length=10)
+test_generator('test4',3)

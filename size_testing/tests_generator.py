@@ -18,14 +18,14 @@ def test_generator(file_name,num_of_arrays,min_size,max_size,min_value=-10000,ma
         print(arrays)
         np.save(file_path,arrays,allow_pickle=True)
         
-# test 1 is for 100000 arrays with sizes between 2 to 150   
-# test 2 is for 100 arrays with sizes between 10000 to 30000
-# test 3 is for 10 arrays with sizes between 1000000 to 10000000
+# test 0 is for 100000 arrays with sizes 32   
+# test 2 is for 100 arrays with sizes 20000
+# test 3 is for 10 arrays with sizes 10000000
 # test 4 is for 1 arrays with size 100000000
-test_generator('test1',100000,2,150)
-test_generator('test2',100,10000,30000)
-test_generator('test3',10,1000000,10000000)
+
+test_generator('test1',100000,32,32)
+test_generator('test2',100,20000,20000)
+test_generator('test3',10,10000000,10000000)
 test_generator('test4',1,100000000,100000000)
-test_generator('test0',100000,32,32)
 
 

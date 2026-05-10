@@ -28,6 +28,7 @@ def saving_result(algorithm_number,duration,test_number):
     
 
 for j in range(1,num_of_tests + 1):
+
     file_path = f"data_type_testing/test{j}.npy"
     arrays = np.load(file_path,allow_pickle=True)
     for i in range(1,num_of_algoritms + 1):

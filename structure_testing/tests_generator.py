@@ -20,17 +20,18 @@ def test_generator(file_name,structure_type,min_value=-10000,max_value=10000):
                 array = array[::-1] 
                 arrays.append(array)
             elif structure_type == 3:
-                mid = size // 2
-                arr = np.random.randint(min_value,max_value,size)
-                sorted_half = np.sort(arr[:mid])
-                array = np.concatenate((sorted_half , arr[mid:])) 
-                arrays.append(array)
-            elif structure_type == 4:
                 partition = int(size * 0.95)
                 arr = np.random.randint(min_value,max_value,size)
                 sorted_part = np.sort(arr[:partition])
                 array = np.concatenate((sorted_part ,arr[partition:]))  
                 arrays.append(array)
+            elif structure_type == 4:
+                mid = size // 2
+                arr = np.random.randint(min_value,max_value,size)
+                sorted_half = np.sort(arr[:mid])
+                array = np.concatenate((sorted_half , arr[mid:])) 
+                arrays.append(array)
+                
             elif structure_type == 5:
                 array = np.sort(np.random.randint(min_value,max_value,size))
                 array = array[::-1] 

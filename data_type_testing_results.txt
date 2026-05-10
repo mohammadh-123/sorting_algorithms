@@ -32,10 +32,11 @@ Algorithm 5 took 22.90162860001146327704 seconds for test 3.
 Algorithm 6 took 0.09345179997035302222 seconds for test 3.
 Algorithm 7 took 0.09088079999492038041 seconds for test 3.
 
-Algorithm 1 took 21.49165209999773651361 seconds for test 4.
-Algorithm 2 took 0.09701379999751225114 seconds for test 4.
-Algorithm 3 took 49.13788609999755863100 seconds for test 4.
-Algorithm 4 took 0.07191139998030848801 seconds for test 4.
-Algorithm 5 took 22.78829849998874124140 seconds for test 4.
-Algorithm 6 took 0.09234749998722691089 seconds for test 4.
-Algorithm 7 took 0.08858389999659266323 seconds for test 4.
+Algorithm 1 took 24.92627360000096814474 seconds for test 4.
+Algorithm 2 took 0.11437600000044767512 seconds for test 4.
+Algorithm 3 took 59.86016279999876132933 seconds for test 4.
+Algorithm 4 took 0.09403230000043549808 seconds for test 4.
+Algorithm 5 took 32.49777080000058049336 seconds for test 4.
+Algorithm 6 took 0.10859119999986432958 seconds for test 4.
+Algorithm 7 took 0.10396339999988413183 seconds for test 4.
+
